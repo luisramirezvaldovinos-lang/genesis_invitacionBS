@@ -56,10 +56,10 @@ const invitation = {
     url: "",
   },
 
-  music: {
-    enabled: true,
-    url: "/music/Cancion.mp3",
-  },
+music: {
+  enabled: true,
+  url: `${import.meta.env.BASE_URL}music/Cancion.mp3`,
+},
 
   photos: {
     hero: "./images/hero.png",
