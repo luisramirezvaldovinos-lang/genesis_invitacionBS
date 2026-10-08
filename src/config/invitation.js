@@ -58,7 +58,7 @@ const invitation = {
 
   music: {
     enabled: true,
-    url: "public/music/Cancion.mp3",
+    url: "/music/Cancion.mp3",
   },
 
   photos: {
