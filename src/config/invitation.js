@@ -53,7 +53,7 @@ const invitation = {
     intro: "Tu presencia es nuestro mejor regalo.",
     subtext:
       "Pero si además deseas tener un detalle para nuestra pequeña Génesis, hemos preparado una mesa de regalos para ella.",
-    url: "",
+    url: "https://www.brantia.dev/",
   },
 
 music: {
