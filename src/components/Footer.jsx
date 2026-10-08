@@ -12,7 +12,7 @@ export default function Footer({ babyName, parents }) {
       <p className="font-body text-[0.7rem] uppercase tracking-[0.3em] text-ink-soft/60">
         {babyName} &middot; {new Date().getFullYear()}
       </p>
-      <p>https://www.brantia.dev/</p>
+      
     </footer>
   );
 }
