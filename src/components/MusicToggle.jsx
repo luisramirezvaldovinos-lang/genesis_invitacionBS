@@ -2,41 +2,61 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { Music, VolumeX } from "lucide-react";
 
-/**
- * Botón discreto de música de fondo.
- * No hace nada si music.enabled es falso o no hay url.
- * `armed` indica que ya hubo una interacción del usuario
- * (por ejemplo, al presionar "Abrir invitación"), requisito
- * de los navegadores móviles para poder reproducir audio.
- */
 export default function MusicToggle({ music, armed }) {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
-    if (armed && music?.enabled && music?.url && audioRef.current) {
-      audioRef.current
-        .play()
-        .then(() => setPlaying(true))
-        .catch(() => setPlaying(false));
-    }
-  }, [armed, music]);
+    if (!audioRef.current || !music?.enabled || !music?.url) return;
 
-  if (!music?.enabled || !music?.url) return null;
+    audioRef.current.load();
+  }, [music]);
 
-  const toggle = () => {
-    if (!audioRef.current) return;
-    if (playing) {
-      audioRef.current.pause();
+  const playMusic = async () => {
+    const audio = audioRef.current;
+
+    if (!audio) return;
+
+    try {
+      await audio.play();
+      setPlaying(true);
+    } catch (error) {
+      console.error("No se pudo reproducir la música:", error);
       setPlaying(false);
-    } else {
-      audioRef.current.play().then(() => setPlaying(true));
     }
   };
 
+  const toggle = async () => {
+    const audio = audioRef.current;
+
+    if (!audio) return;
+
+    if (playing) {
+      audio.pause();
+      setPlaying(false);
+      return;
+    }
+
+    await playMusic();
+  };
+
+  useEffect(() => {
+    if (armed) {
+      playMusic();
+    }
+  }, [armed]);
+
+  if (!music?.enabled || !music?.url) return null;
+
   return (
     <>
-      <audio ref={audioRef} src={music.url} loop />
+      <audio
+        ref={audioRef}
+        src={music.url}
+        loop
+        preload="auto"
+      />
+
       <motion.button
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
