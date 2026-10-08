@@ -5,6 +5,7 @@ export default function Footer({ babyName, parents }) {
     <footer className="relative flex flex-col items-center gap-4 px-6 pb-16 pt-10 text-center">
       <FloralSprig className="h-14 w-11 opacity-60" />
       <p className="font-display text-2xl italic text-rose-deep">Con amor, esperamos verte</p>
+      <p className="font-display text-2xl italic text-rose-deep">https://www.brantia.dev/</p>
       <p className="font-display text-lg italic text-ink-soft">
         Con todo nuestro amor, {parents.mom} &amp; {parents.dad}
       </p>
