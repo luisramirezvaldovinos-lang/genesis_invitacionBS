@@ -67,7 +67,7 @@ music: {
     gallery: [
       "./images/foto1.png",
       "./images/foto2.jpeg",
-      "./images/parents.jpeg",
+      "./images/foto3.jpeg",
     ],
     ultrasound: "",
   },
