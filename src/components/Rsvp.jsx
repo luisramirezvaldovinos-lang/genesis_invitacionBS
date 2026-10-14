@@ -21,7 +21,7 @@ export default function Rsvp({ contact, babyName }) {
           className="flex items-center gap-2 rounded-full bg-rose-deep px-8 py-4 font-body text-xs uppercase tracking-[0.2em] text-ivory shadow-[0_15px_35px_-15px_rgba(168,114,106,0.6)] transition-transform duration-500 hover:scale-[1.03]"
         >
           <MessageCircleHeart size={16} strokeWidth={1.6} />
-          Confirmar asistencia
+          Confirma tú asistencia
         </motion.a>
       </div>
     </section>
