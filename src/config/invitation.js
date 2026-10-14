@@ -62,14 +62,14 @@ music: {
 },
 
   photos: {
-    hero: "./images/hero.png",
+    hero: "./images/hero.jpg",
     parents: "./images/parents.jpeg",
     gallery: [
       "./images/foto1.png",
       "./images/foto2.jpeg",
       "./images/foto3.jpeg",
     ],
-    ultrasound: "./images/hero.png",
+    ultrasound: "./images/Ultra.jpeg",
   },
 
   seo: {

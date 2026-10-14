@@ -15,7 +15,7 @@ export default function Ultrasound({ babyName, photo }) {
           transition={{ duration: 0.8 }}
           className="font-display text-2xl italic text-ink-soft"
         >
-          Desde antes de conocerte&hellip;
+          La primera vez que te conocimos...&hellip;
         </motion.p>
 
         <GoldDivider className="mt-5 mb-8" />
