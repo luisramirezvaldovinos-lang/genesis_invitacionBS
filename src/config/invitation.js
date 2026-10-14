@@ -22,11 +22,11 @@ const invitation = {
 
   event: {
     // Fecha en formato ISO — se usa para calcular el contador automáticamente
-    isoDate: "2026-10-31T16:00:00-06:00",
+    isoDate: "2026-10-31T15:00:00-06:00",
     // Textos ya formateados para mostrarse en pantalla
     dayLabel: "Sábado",
     dateLabel: "31 de Octubre de 2026",
-    timeLabel: "4:00 PM",
+    timeLabel: "3:00 PM",
     locationName: "Asadero Campestre",
     address:
       "Carretera Acapulco-Zihuatanejo Km 22, Poblado El Embarcadero, Guerrero",
@@ -41,7 +41,7 @@ const invitation = {
 
   contact: {
     whatsappEnabled: true,
-    whatsappNumber: "527471430893",
+    whatsappNumber: "527443913600",
     // Mensaje predeterminado que se generará cuando se active la confirmación
     whatsappTemplate:
       "¡Hola! Confirmo mi asistencia al Baby Shower de {babyName}",
@@ -53,7 +53,7 @@ const invitation = {
     intro: "Tu presencia es nuestro mejor regalo.",
     subtext:
       "Pero si además deseas tener un detalle para nuestra pequeña Génesis, hemos preparado una mesa de regalos para ella.",
-    url: "https://www.brantia.dev/",
+    url: "https://mesaderegalos.liverpool.com.mx/milistaderegalos/60059721",
   },
 
 music: {
