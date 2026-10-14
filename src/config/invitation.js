@@ -69,7 +69,7 @@ music: {
       "./images/foto2.jpeg",
       "./images/foto3.jpeg",
     ],
-    ultrasound: "",
+    ultrasound: "./images/hero.png",
   },
 
   seo: {
